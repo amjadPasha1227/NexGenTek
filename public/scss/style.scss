@@ -1,0 +1,248 @@
+@import "fontface.scss";
+@import "variables.scss";
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: $primaryfontRegular;
+}
+
+header{
+    background: $primary-color;
+    padding: 30px;
+    .header_cnt{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        nav ul{
+            padding: 0;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            li{
+                display: flex;
+                margin-right: 60px;
+                &:last-child{
+                    margin: 0;
+                }
+                a{
+                    color: $white;
+                    text-decoration: none;
+                    font-family: $primaryfontRegular;
+                    font-size: 17px;
+                    &:hover{
+                        color: $secondary-color;
+                    }
+                }
+                .login_btn{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-family: $primaryfontRegular;
+                    font-size: 15px;
+                    border: 1px solid $white;
+                    height: 36px;
+                    padding: 0 20px;
+                    color: $white;
+                    cursor: pointer;
+                    line-height: normal;
+                    img{
+                        margin-right: 5px;
+                    }
+                    &:hover{
+                        border: 1px solid $secondary-color;
+                        background: $secondary-color;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.home_banner{
+    background: url('../../images/banner_bg.png') no-repeat;
+    background-size: cover;
+    header {
+        background: transparent linear-gradient(180deg, $primary-color 0%, transparent 100%);
+    }
+}
+
+.banner_sec {
+    padding: 50px 0 100px;
+    .one_stop_sec{
+        max-width: 730px;
+        background: rgba($color: $primary-color, $alpha: 0.5);
+        padding: 84px 70px;
+        border-left: 2px solid $secondary-color;
+        backdrop-filter: blur(10px);
+        h1{
+            color: $white;
+            font-family: $primaryfontBold;
+            font-size: 48px;
+            line-height: 55px;
+            margin-bottom: 15px;
+        }
+        p{
+            color: rgba($color: $white, $alpha: 0.8);
+            font-family: $primaryfontRegular;
+            font-size: 18px;
+            line-height: 28px;
+            margin-bottom: 30px;
+        }
+        .link_btn{
+            margin-left: 40px;
+        }
+    }
+}
+
+.primary_btn{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-family: $primaryfontRegular;
+    font-size: 18px;
+    border: 1px solid $secondary-color;
+    background: $secondary-color;
+    height: 50px;
+    padding: 0 30px;
+    color: $white;
+    cursor: pointer;
+    line-height: normal;
+    &:hover{
+        background: transparent;
+        color: $secondary-color;
+    }
+}
+
+.link_btn{
+    font-family: $primaryfontRegular;
+    font-size: 18px;
+    color: $white;
+    cursor: pointer;
+    &:hover{
+        color: $secondary-color;
+        text-decoration: underline;
+    }
+}
+
+.more_about_sec{
+    padding: 100px 0;
+    .more_about_cnt{
+        max-width: 1140px;
+        margin: 0 auto;
+        .description_sec{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 46px;
+            h4{
+                color: $primary-color;
+                font-family: $primaryfontRegular;
+                font-size: 28px;
+                max-width: 808px;
+                margin: 0;
+                line-height: 40px;
+            }
+        }
+        .why_choose_sec{
+            h5{
+                color: $secondary-color;
+                font-family: $primaryfontRegular;
+                font-size: 20px;
+                margin-bottom: 15px;
+            }
+            .why_choose_list{
+                display: grid;
+                grid-template-columns: auto auto auto;
+                grid-gap:20px;
+                margin: 0;
+                padding: 0;
+                li{
+                    display: flex;
+                    align-items: center;
+                    background: #F7F9FB;
+                    padding: 25px 25px 25px 0;
+                    min-height: 150px;
+                    figure{
+                        margin: 0;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        padding: 20px 35px;
+                        border-radius: 0px 50px 50px 0px;
+                        background: $white;
+                    }
+                    span{
+                        margin-left: 20px;
+                        color: $primary-color;
+                        font-family: $primaryfontRegular;
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.results_sec{
+    background: $secondary-color;
+    padding: 60px 0;
+    position: relative;
+    &:before{
+        content: '';
+        width: 100%;
+        height: 50px;
+        position: absolute;
+        top:-50px;
+        left: 0;
+        background: url('../../images/result_bg.svg') no-repeat;
+    }
+    .results_cnt{
+        max-width: 1140px;
+        margin: 0 auto;
+        padding: 0 30px;
+        h4{
+            color: rgba($color: $white, $alpha: 0.8);
+            font-family: $primaryfontRegular;
+            font-size: 28px;
+            margin: 0;
+            text-align: center;
+        }
+        .count_sec{
+            margin: 50px 0 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            li{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                .count{
+                    font-family: $primaryfontBold;
+                    color: $white;
+                    font-size: 64px;
+                    line-height: 80px;
+                }
+                .count_info{
+                    font-family: $primaryfontRegular;
+                    font-size: 20px;
+                    color: rgba($color: $white, $alpha: 0.8);
+                }
+            }
+        }
+    }
+}
+
+.our_services_sec{
+    padding: 100px 0;
+    .our_services_cnt{
+        display: flex;
+        align-items: flex-start;
+        .left_cnt{
+            position: sticky;
+            top: 100px;
+        }
+    }
+}

@@ -1,0 +1,36 @@
+$primaryfontLight: 'Soleil Light';
+$primaryfontBook: 'Soleil Book';
+$primaryfontRegular: 'Soleil Regular';
+$primaryfontBold: 'Soleil Bold';
+
+@font-face {
+    font-family: 'Soleil Light';
+    src: url("../../fonts/soleillight.woff") format('woff'),
+         url("../../fonts/soleillight.woff2") format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Soleil Book';
+    src: url("../../fonts/soleilbook.woff") format('woff'),
+         url("../../fonts/soleilbook.woff2") format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Soleil Regular';
+    src: url("../../fonts/soleilregular.woff") format('woff'),
+         url("../../fonts/soleilregular.woff2") format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Soleil Bold';
+    src: url("../../fonts/soleilbold.woff") format('woff'),
+         url("../../fonts/soleilbold.woff2") format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
